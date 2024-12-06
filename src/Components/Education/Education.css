@@ -1,0 +1,132 @@
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 170px;
+}
+
+.education-title {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.education-title h1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 30px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+
+.education-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 70%;
+}
+
+.education-hr {
+  display: flex;
+  outline: none;
+  border: none;
+  margin: 120px 0 100px 0;
+  align-items: center;
+  transform: rotate(90deg);
+  width: 30%;
+  height: 8px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+}
+
+.one,
+.two {
+  position: relative;
+  border: 10px solid white;
+  border-radius: 50%;
+}
+.one{
+  left: 20%;
+}
+.two{
+  left: 60%;
+}
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-left,
+.education-right {
+  position: relative;
+  width: 200%;
+  font-size: 22px;
+}
+
+.education-left {
+  bottom: 200px;
+  right: 270px;
+}
+
+.education-right {
+  bottom: 140px;
+  left: 280px;
+}
+
+.education-section-middle h3 {
+  background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.education-section p {
+  font-size: 18px;
+  font-weight: 600;
+}
+@media(max-width: 768px){
+  .education{
+    gap: 30px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+  .education-title h1{
+    font-size: 30px;
+    padding: 0;
+  }
+  .education-title img{
+    width: 130px;
+    right: -20px;
+  }
+  .education-hr{
+    position: relative;
+    bottom: 100px;
+    left: 140px;
+  }
+  .education-section {
+    flex-direction: column;
+  }
+  .education-left ,
+  .education-right {
+    position: relative;
+    width: 80%;
+    font-size: 14px;
+  }
+  .education-left {
+    bottom: 300px;
+    left: 0px;
+  }
+  
+  .education-right {
+    bottom: 270px;
+    left: 270px;
+  }
+  .education-left p, .education-right p {
+    width: 90%;
+  }
+
+}
